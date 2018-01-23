@@ -79,7 +79,7 @@ You can also download the aws-exports.js file and place it in `client/src/aws-ex
 
      ```
      $ cd ../aws-mobile-react-sample/client/src/
-     $ aws s3api list-buckets --query 'Buckets[?starts_with(Name,`reactsample-hosting`)].Name' |grep reactsample |tr -d '"'
+     $ aws s3api list-buckets --query 'Buckets[?starts_with(Name,`pocreactdatalake-hosting`)].Name' |grep reactsample |tr -d '"'
      $ aws s3api get-object --bucket <YOUR_BUCKET_NAME> --key aws-exports.js ./aws-exports.js
      ```
 
